@@ -10,16 +10,14 @@ namespace ADONetPractise
     {
         static void Main(string[] args)
         {
-            var sysManagement = new SystemManagement();
-            var member = new Member();
-            var memberAdditionalInfo = new MemberAdditionalInfo();
             SQLBulkCopyPractise sQLBulkCopyPractise = new SQLBulkCopyPractise();
-            var dt = sQLBulkCopyPractise.TransferTypeToDataTable(sysManagement);
-            sQLBulkCopyPractise.InsertData(dt, "dbo.SystemManagement", sysManagement);
-            var dt1 = sQLBulkCopyPractise.TransferTypeToDataTable(member);
-            sQLBulkCopyPractise.InsertData(dt1, "dbo.Member", member);
-            var dt2 = sQLBulkCopyPractise.TransferTypeToDataTable(memberAdditionalInfo);
-            sQLBulkCopyPractise.InsertData(dt2, "dbo.MemberAdditionalInfo", memberAdditionalInfo);
+            sQLBulkCopyPractise.SetActionDictionary();
+            var dt = sQLBulkCopyPractise.TransferTypeToDataTable(typeof(SystemManagement));
+            sQLBulkCopyPractise.InsertData(dt, "dbo.SystemManagement", typeof(SystemManagement));
+            var dt1 = sQLBulkCopyPractise.TransferTypeToDataTable(typeof(Member));
+            sQLBulkCopyPractise.InsertData(dt1, "dbo.Member", typeof(Member));
+            var dt2 = sQLBulkCopyPractise.TransferTypeToDataTable(typeof(MemberAdditionalInfo));
+            sQLBulkCopyPractise.InsertData(dt2, "dbo.MemberAdditionalInfo", typeof(MemberAdditionalInfo));
         }
     }
 }
