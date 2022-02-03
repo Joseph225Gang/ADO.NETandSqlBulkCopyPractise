@@ -12,6 +12,21 @@ namespace ADONetPractise
 {
     public class SQLBulkCopyPractise
     {
+        private static SQLBulkCopyPractise instance = null;
+
+        public static SQLBulkCopyPractise Instance
+        {
+            get
+            {
+                return instance ?? new SQLBulkCopyPractise();
+            }
+        }
+
+        private SQLBulkCopyPractise()
+        {
+            instance = this;
+        }
+
         string con = ConfigurationManager.ConnectionStrings["ADONETConn"].ConnectionString;
         int insertCount = 100;
         delegate object SetValue();

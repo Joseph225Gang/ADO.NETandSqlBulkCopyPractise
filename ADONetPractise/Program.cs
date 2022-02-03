@@ -12,7 +12,7 @@ namespace ADONetPractise
 
         static void Main(string[] args)
         {
-            SQLBulkCopyPractise sQLBulkCopyPractise = new SQLBulkCopyPractise();
+            SQLBulkCopyPractise sQLBulkCopyPractise = SQLBulkCopyPractise.Instance;
             sQLBulkCopyPractise.SetActionDictionary();
             sQLBulkCopyPractise.InsertData(sQLBulkCopyPractise.TransferTypeToDataTable(typeof(SystemManagement)), $"{_tablePrex}{nameof(SystemManagement)}",typeof(SystemManagement));
             sQLBulkCopyPractise.InsertData(sQLBulkCopyPractise.TransferTypeToDataTable(typeof(Member)), $"{_tablePrex}{nameof(SystemManagement)}", typeof(Member));
