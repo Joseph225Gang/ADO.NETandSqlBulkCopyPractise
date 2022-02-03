@@ -6,7 +6,7 @@ namespace ADONetPractise
 {
     public class SystemManagement
     {
-        public int systemId { get; set; }
-        public Guid uid { get; set; }
+        public int SystemId { get; set; }
+        public Guid Uid { get; set; }
     }
 }

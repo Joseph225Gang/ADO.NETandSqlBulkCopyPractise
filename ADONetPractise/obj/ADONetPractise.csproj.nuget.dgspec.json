@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio 2019\\ADONetPractise\\ADONetPractise\\ADONetPractise.csproj": {}
+    "D:\\NewGithub\\ADO.NETandSqlBulkCopyPractise\\ADONetPractise\\ADONetPractise.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio 2019\\ADONetPractise\\ADONetPractise\\ADONetPractise.csproj": {
+    "D:\\NewGithub\\ADO.NETandSqlBulkCopyPractise\\ADONetPractise\\ADONetPractise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio 2019\\ADONetPractise\\ADONetPractise\\ADONetPractise.csproj",
+        "projectUniqueName": "D:\\NewGithub\\ADO.NETandSqlBulkCopyPractise\\ADONetPractise\\ADONetPractise.csproj",
         "projectName": "ADONetPractise",
-        "projectPath": "D:\\Visual Studio 2019\\ADONetPractise\\ADONetPractise\\ADONetPractise.csproj",
+        "projectPath": "D:\\NewGithub\\ADO.NETandSqlBulkCopyPractise\\ADONetPractise\\ADONetPractise.csproj",
         "packagesPath": "C:\\Users\\Kwei-GangLai\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio 2019\\ADONetPractise\\ADONetPractise\\obj\\",
+        "outputPath": "D:\\NewGithub\\ADO.NETandSqlBulkCopyPractise\\ADONetPractise\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -65,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

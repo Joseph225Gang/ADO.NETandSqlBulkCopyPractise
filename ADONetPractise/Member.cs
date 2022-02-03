@@ -6,8 +6,8 @@ namespace ADONetPractise
 {
     public class Member
     {
-        public Guid memberId { get; set; }
-        public int systemId { get; set; }
-        public string memberName { get; set; }
+        public Guid MemberId { get; set; }
+        public int SystemId { get; set; }
+        public string MemberName { get; set; }
     }
 }

@@ -28,3 +28,36 @@ D:\Visual Studio 2019\ADONetPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runt
 D:\Visual Studio 2019\ADONetPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Visual Studio 2019\ADONetPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Visual Studio 2019\ADONetPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\ADONetPractise.exe
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\ADONetPractise.dll.config
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\ADONetPractise.deps.json
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\ADONetPractise.runtimeconfig.json
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\ADONetPractise.runtimeconfig.dev.json
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\ADONetPractise.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\ADONetPractise.pdb
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\obj\Debug\netcoreapp3.1\ADONetPractise.csproj.AssemblyReference.cache
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\obj\Debug\netcoreapp3.1\ADONetPractise.GeneratedMSBuildEditorConfig.editorconfig
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\obj\Debug\netcoreapp3.1\ADONetPractise.AssemblyInfoInputs.cache
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\obj\Debug\netcoreapp3.1\ADONetPractise.AssemblyInfo.cs
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\obj\Debug\netcoreapp3.1\ADONetPractise.csproj.CoreCompileInputs.cache
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\obj\Debug\netcoreapp3.1\ADONetPractise.csproj.CopyComplete
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\obj\Debug\netcoreapp3.1\ADONetPractise.dll
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\obj\Debug\netcoreapp3.1\ADONetPractise.pdb
+D:\NewGithub\ADO.NETandSqlBulkCopyPractise\ADONetPractise\obj\Debug\netcoreapp3.1\ADONetPractise.genruntimeconfig.cache

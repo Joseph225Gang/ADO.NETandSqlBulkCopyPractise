@@ -8,16 +8,15 @@ namespace ADONetPractise
 {
     class Program
     {
+        static private string _tablePrex = "dbo.";
+
         static void Main(string[] args)
         {
             SQLBulkCopyPractise sQLBulkCopyPractise = new SQLBulkCopyPractise();
             sQLBulkCopyPractise.SetActionDictionary();
-            var dt = sQLBulkCopyPractise.TransferTypeToDataTable(typeof(SystemManagement));
-            sQLBulkCopyPractise.InsertData(dt, "dbo.SystemManagement", typeof(SystemManagement));
-            var dt1 = sQLBulkCopyPractise.TransferTypeToDataTable(typeof(Member));
-            sQLBulkCopyPractise.InsertData(dt1, "dbo.Member", typeof(Member));
-            var dt2 = sQLBulkCopyPractise.TransferTypeToDataTable(typeof(MemberAdditionalInfo));
-            sQLBulkCopyPractise.InsertData(dt2, "dbo.MemberAdditionalInfo", typeof(MemberAdditionalInfo));
+            sQLBulkCopyPractise.InsertData(sQLBulkCopyPractise.TransferTypeToDataTable(typeof(SystemManagement)), $"{_tablePrex}{nameof(SystemManagement)}",typeof(SystemManagement));
+            sQLBulkCopyPractise.InsertData(sQLBulkCopyPractise.TransferTypeToDataTable(typeof(Member)), $"{_tablePrex}{nameof(SystemManagement)}", typeof(Member));
+            sQLBulkCopyPractise.InsertData(sQLBulkCopyPractise.TransferTypeToDataTable(typeof(MemberAdditionalInfo)), $"{_tablePrex}{nameof(MemberAdditionalInfo)}", typeof(MemberAdditionalInfo));
         }
     }
 }

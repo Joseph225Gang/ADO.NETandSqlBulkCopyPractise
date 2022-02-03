@@ -6,7 +6,7 @@ namespace ADONetPractise
 {
     public class MemberAdditionalInfo
     {
-        public Guid memberAdiId { get; set; }
-        public int currencyAmount { get; set; }
+        public Guid MemberAdiId { get; set; }
+        public int CurrencyAmount { get; set; }
     }
 }
