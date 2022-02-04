@@ -27,10 +27,10 @@ namespace ADONetPractise
             instance = this;
         }
 
-        string _con = ConfigurationManager.ConnectionStrings["ADONETConn"].ConnectionString;
+        string con = ConfigurationManager.ConnectionStrings["ADONETConn"]?.ConnectionString;
         int _insertCount = 100;
         delegate object SetValue();
-        Dictionary<Type, SetValue> _actionDictionary = new Dictionary<Type, SetValue>();
+        Dictionary<Type, SetValue> actionDictionary = new Dictionary<Type, SetValue>();
 
         private Object AssignIntValue()
         {
@@ -50,9 +50,9 @@ namespace ADONetPractise
 
         public void SetActionDictionary()
         {
-            _actionDictionary.Add(typeof(int), AssignIntValue);
-            _actionDictionary.Add(typeof(string), AssignStringValue);
-            _actionDictionary.Add(typeof(Guid), AssignGuidValue);
+            actionDictionary.Add(typeof(int), AssignIntValue);
+            actionDictionary.Add(typeof(string), AssignStringValue);
+            actionDictionary.Add(typeof(Guid), AssignGuidValue);
         }
 
         private IEnumerable<PropertyInfo> TransferObjectIntoProperty(Type type)
@@ -90,7 +90,7 @@ namespace ADONetPractise
                 foreach (var item in props)
                 {
                     Type type = item.PropertyType;
-                    row[item.Name] = _actionDictionary[type].Invoke();
+                    row[item.Name] = actionDictionary[type].Invoke();
                 }
                 dt.Rows.Add(row);
             }
@@ -101,7 +101,7 @@ namespace ADONetPractise
         {
             IEnumerable<PropertyInfo> props = TransferObjectIntoProperty(type);
 
-            using (var sql = new SqlConnection(_con))
+            using (var sql = new SqlConnection(con))
             {
                 sql.Open();
                 using (var sqlBulkCopy = new SqlBulkCopy(sql))
