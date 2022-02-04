@@ -44,7 +44,7 @@ namespace ADONetPractise
 
         private Object AssignStringValue()
         {
-            string[] strArr = new string[] { "joseph", "Michael", "John", "Marry" };
+            string[] strArr = new string[] { "Joseph", "Michael", "John", "Marry" };
             return strArr[new Random().Next(4)];
         }
 
