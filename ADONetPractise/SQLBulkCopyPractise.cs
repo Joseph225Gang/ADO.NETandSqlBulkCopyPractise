@@ -12,22 +12,22 @@ namespace ADONetPractise
 {
     public class SQLBulkCopyPractise
     {
-        private static SQLBulkCopyPractise instance = null;
+        private static SQLBulkCopyPractise _instance = null;
 
         public static SQLBulkCopyPractise Instance
         {
             get
             {
-                return instance ?? new SQLBulkCopyPractise();
+                return _instance ?? new SQLBulkCopyPractise();
             }
         }
 
         private SQLBulkCopyPractise()
         {
-            instance = this;
+            _instance = this;
         }
 
-        string con = ConfigurationManager.ConnectionStrings["ADONETConn"]?.ConnectionString;
+        string _conn = ConfigurationManager.ConnectionStrings["ADONETConn"]?.ConnectionString;
         int _insertCount = 100;
         delegate object SetValue();
         Dictionary<Type, SetValue> _actionDictionary = new Dictionary<Type, SetValue>();
@@ -101,7 +101,7 @@ namespace ADONetPractise
         {
             IEnumerable<PropertyInfo> props = TransferObjectIntoProperty(type);
 
-            using (var sql = new SqlConnection(con))
+            using (var sql = new SqlConnection(_conn))
             {
                 sql.Open();
                 using (var sqlBulkCopy = new SqlBulkCopy(sql))
