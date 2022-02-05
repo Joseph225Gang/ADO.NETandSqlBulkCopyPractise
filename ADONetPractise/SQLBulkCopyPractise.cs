@@ -27,7 +27,7 @@ namespace ADONetPractise
             _instance = this;
         }
 
-        string _conn = ConfigurationManager.ConnectionStrings["ADONETConn"]?.ConnectionString;
+        string _conn = ConfigurationManager.ConnectionStrings["ADONETConn"]?.ConnectionString ?? "Data Source=./;Initial Catalog = DBPractise; Integrated Security = True";
         int _insertCount = 100;
         delegate object SetValue();
         Dictionary<Type, SetValue> _actionDictionary = new Dictionary<Type, SetValue>();
@@ -45,14 +45,17 @@ namespace ADONetPractise
         private Object AssignStringValue()
         {
             string[] strArr = new string[] { "Joseph", "Michael", "John", "Marry" };
-            return strArr[new Random().Next(4)];
+            return strArr[new Random().Next(strArr.Length)];
         }
 
         public void SetActionDictionary()
         {
-            _actionDictionary.Add(typeof(int), AssignIntValue);
-            _actionDictionary.Add(typeof(string), AssignStringValue);
-            _actionDictionary.Add(typeof(Guid), AssignGuidValue);
+            if(!_actionDictionary.ContainsKey(typeof(int)))
+                _actionDictionary.Add(typeof(int), AssignIntValue);
+            if (!_actionDictionary.ContainsKey(typeof(string)))
+                _actionDictionary.Add(typeof(string), AssignStringValue);
+            if (!_actionDictionary.ContainsKey(typeof(Guid)))
+                _actionDictionary.Add(typeof(Guid), AssignGuidValue);
         }
 
         private IEnumerable<PropertyInfo> TransferObjectIntoProperty(Type type)
