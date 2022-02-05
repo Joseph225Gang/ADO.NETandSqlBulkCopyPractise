@@ -14,11 +14,11 @@ namespace ADONetPractise
         {
             try
             {
-                SQLBulkCopyPractise SqLBulkCopyPractise = SQLBulkCopyPractise.Instance;
-                SqLBulkCopyPractise.SetActionDictionary();
-                SqLBulkCopyPractise.InsertData(SqLBulkCopyPractise.TransferTypeToDataTable(typeof(SystemManagement)), $"{_tablePrex}{nameof(SystemManagement)}", typeof(SystemManagement));
-                SqLBulkCopyPractise.InsertData(SqLBulkCopyPractise.TransferTypeToDataTable(typeof(Member)), $"{_tablePrex}{nameof(Member)}", typeof(Member));
-                SqLBulkCopyPractise.InsertData(SqLBulkCopyPractise.TransferTypeToDataTable(typeof(MemberAdditionalInfo)), $"{_tablePrex}{nameof(MemberAdditionalInfo)}", typeof(MemberAdditionalInfo));
+                SQLBulkCopyPractise sQLBulkCopyPractise = SQLBulkCopyPractise.Instance;
+                sQLBulkCopyPractise.SetActionDictionary();
+                sQLBulkCopyPractise.InsertData(sQLBulkCopyPractise.TransferTypeToDataTable(typeof(SystemManagement)), $"{_tablePrex}{nameof(SystemManagement)}", typeof(SystemManagement));
+                sQLBulkCopyPractise.InsertData(sQLBulkCopyPractise.TransferTypeToDataTable(typeof(Member)), $"{_tablePrex}{nameof(Member)}", typeof(Member));
+                sQLBulkCopyPractise.InsertData(sQLBulkCopyPractise.TransferTypeToDataTable(typeof(MemberAdditionalInfo)), $"{_tablePrex}{nameof(MemberAdditionalInfo)}", typeof(MemberAdditionalInfo));
             }
             catch(SqlException ex)
             { 
